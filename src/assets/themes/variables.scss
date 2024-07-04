@@ -1,0 +1,101 @@
+:root {
+    /** primary **/
+	--color-primary: #F7B52D;
+	--color-primary-rgb: 247,181,45;
+	--color-primary-contrast: #000000;
+	--color-primary-contrast-rgb: 0,0,0;
+	--color-primary-shade: #d99f28;
+	--color-primary-tint: #f8bc42;
+  
+    /** secondary **/
+    --color-secondary: #3B6E70;
+	--color-secondary-rgb: 59,110,112;
+	--color-secondary-contrast: #ffffff;
+	--color-secondary-contrast-rgb: 255,255,255;
+	--color-secondary-shade: #346163;
+	--color-secondary-tint: #4f7d7e;
+
+    /** secondary-light **/
+    --color-secondary-light: #99CCCC;
+	--color-secondary-light-rgb: 153,204,204;
+	--color-secondary-light-contrast: #000000;
+	--color-secondary-light-contrast-rgb: 0,0,0;
+	--color-secondary-light-shade: #87b4b4;
+	--color-secondary-light-tint: #a3d1d1;
+
+    /** base-light **/
+	--color-base-light: #fcedbe;
+	--color-base-light-rgb: 252,237,190;
+	--color-base-light-contrast: #000000;
+	--color-base-light-contrast-rgb: 0,0,0;
+	--color-base-light-shade: #ded1a7;
+	--color-base-light-tint: #fcefc5;
+
+    /** base-dark **/
+    --color-base-dark: #A8885C;
+	--color-base-dark-rgb: 168,136,92;
+	--color-base-dark-contrast: #000000;
+	--color-base-dark-contrast-rgb: 0,0,0;
+	--color-base-dark-shade: #947851;
+	--color-base-dark-tint: #b1946c;
+
+    /** dark **/
+    --color-dark: #1F282B;
+	--color-dark-rgb: 31,40,43;
+	--color-dark-contrast: #ffffff;
+	--color-dark-contrast-rgb: 255,255,255;
+	--color-dark-shade: #1b2326;
+	--color-dark-tint: #353e40;
+}
+
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//         /** primary **/
+//         --color-primary: #F7B52D;
+//         --color-primary-rgb: 247,181,45;
+//         --color-primary-contrast: #000000;
+//         --color-primary-contrast-rgb: 0,0,0;
+//         --color-primary-shade: #d99f28;
+//         --color-primary-tint: #f8bc42;
+    
+//         /** secondary **/
+//         --color-secondary: #3B6E70;
+//         --color-secondary-rgb: 59,110,112;
+//         --color-secondary-contrast: #ffffff;
+//         --color-secondary-contrast-rgb: 255,255,255;
+//         --color-secondary-shade: #346163;
+//         --color-secondary-tint: #4f7d7e;
+
+//         /** secondary-light **/
+//         --color-secondary-light: #99CCCC;
+//         --color-secondary-light-rgb: 153,204,204;
+//         --color-secondary-light-contrast: #000000;
+//         --color-secondary-light-contrast-rgb: 0,0,0;
+//         --color-secondary-light-shade: #87b4b4;
+//         --color-secondary-light-tint: #a3d1d1;
+
+//         /** base-light **/
+//         --color-base-light: #fcedbe;
+//         --color-base-light-rgb: 252,237,190;
+//         --color-base-light-contrast: #000000;
+//         --color-base-light-contrast-rgb: 0,0,0;
+//         --color-base-light-shade: #ded1a7;
+//         --color-base-light-tint: #fcefc5;
+
+//         /** base-dark **/
+//         --color-base-dark: #A8885C;
+//         --color-base-dark-rgb: 168,136,92;
+//         --color-base-dark-contrast: #000000;
+//         --color-base-dark-contrast-rgb: 0,0,0;
+//         --color-base-dark-shade: #947851;
+//         --color-base-dark-tint: #b1946c;
+
+//         /** dark **/
+//         --color-dark: #1F282B;
+//         --color-dark-rgb: 31,40,43;
+//         --color-dark-contrast: #ffffff;
+//         --color-dark-contrast-rgb: 255,255,255;
+//         --color-dark-shade: #1b2326;
+//         --color-dark-tint: #353e40;
+//     }
+// }
