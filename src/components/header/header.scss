@@ -133,22 +133,22 @@
     display: block;
 }
 
-// @media (max-width: 820px) { 
-//     #menu {
-//         ul {
-//             display: none !important;
-//         }
+@media (max-width: 820px) { 
+    #menu {
+        ul {
+            display: none !important;
+        }
 
-//         .hamburger-icon {
-//             display: inline-block !important;
-//         }
-//         background-size: 820px auto !important;
-//     }
-// }
+        .hamburger-icon {
+            display: inline-block !important;
+        }
+        background-size: 820px auto !important;
+    }
+}
 
-// @media (min-width: 820px) {
-//     .hamburger-content {
-//         display: none !important;
-//     }
+@media (min-width: 820px) {
+    .hamburger-content {
+        display: none !important;
+    }
     
-// }
+}
