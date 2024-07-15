@@ -1,0 +1,164 @@
+.root-wrapper {
+  min-height: 100%;
+  background-color: var(--color-base-dark-tint);
+}
+
+.wallet-container {
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.wallet-container h2 {
+  color: var(--color-dark);
+  font-family: "Merriweather", serif;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wallet-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wallet-container li {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+  background-color: var(--color-base-light);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wallet-container li:hover {
+    background-color: var(--color-base-light-shade);
+}
+
+.wallet-container .create-button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 4px;
+  color: var(--color-dark);
+  cursor: pointer;
+  padding: 8px 20px 4px 20px;
+  margin-top: -50px;
+  float: right;
+  font-size: 25px;
+}
+
+.wallet-container .create-button:hover {
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.delete-button {
+  background-color: #ce3232;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: #9e0404;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: var(--color-base-light);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid var(--color-base-light-shade);
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content .label-wallet {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.checkbox-wrapper {
+    max-height: 230px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.modal-content .label-checkbox-wallet {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.modal-content .input-text-wallet {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.span-value-wallet {
+    float: right;
+}
+
+.btn-submit-wallet {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--color-primary);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: var(--color-dark);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-submit-wallet:hover {
+    background-color: var(--color-primary-shade);
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}

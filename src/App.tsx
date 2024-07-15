@@ -1,25 +1,25 @@
-import { Header } from './components/header/header'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
-import Home from './pages/home/home';
-import About from "./pages/about/about";
-import Products from "./pages/products/products";
-import Information from './pages/information/information';
-import Contact from './pages/contact/contact';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import Wallet from "./pages/wallet/wallet";
+import Currency from './pages/currency/currency';
 
 import './assets/themes/styles.scss';
+import Login from './pages/login/login';
+import Register from './pages/register/register';
+
+const AuthGuard: React.FC<{ children: JSX.Element }> = ({ children }) => {
+  const isAuthenticated = Boolean(localStorage.getItem('auth'));
+  return isAuthenticated ? children : <Navigate to="/login" />;
+};
 
 function App() {
   return <BrowserRouter>
-      <Header />
       <Routes>
         {/* <Route path="/" element={<Header />}> */}
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="products" element={<Products />} />
-          <Route path="information" element={<Information />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<Home />} />
+        <Route path="/currency" element={<AuthGuard><Currency /></AuthGuard>} />
+        <Route path="/wallet" element={<AuthGuard><Wallet /></AuthGuard>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Navigate to="/currency" />} />
         {/* </Route> */}
       </Routes>
     </BrowserRouter>
